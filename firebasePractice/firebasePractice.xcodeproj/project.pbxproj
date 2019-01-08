@@ -8,23 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		1118638821E5508800F4748E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118638721E5508800F4748E /* AppDelegate.swift */; };
-		1118638A21E5508800F4748E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118638921E5508800F4748E /* ViewController.swift */; };
 		1118638D21E5508800F4748E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1118638B21E5508800F4748E /* Main.storyboard */; };
 		1118638F21E5508A00F4748E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1118638E21E5508A00F4748E /* Assets.xcassets */; };
 		1118639221E5508A00F4748E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1118639021E5508A00F4748E /* LaunchScreen.storyboard */; };
 		1118639A21E5514B00F4748E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1118639921E5514B00F4748E /* GoogleService-Info.plist */; };
+		1118639C21E552EC00F4748E /* ChatRoomsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118639B21E552EC00F4748E /* ChatRoomsTVC.swift */; };
+		1118639F21E5530900F4748E /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118639E21E5530900F4748E /* MessageVC.swift */; };
+		111863A121E553F000F4748E /* MessageThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111863A021E553F000F4748E /* MessageThread.swift */; };
+		111863A421E555F700F4748E /* MessageThreadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111863A321E555F700F4748E /* MessageThreadController.swift */; };
+		111863A721E5564300F4748E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111863A621E5564300F4748E /* Message.swift */; };
 		E6E0354307404C7401C2FA6F /* Pods_firebasePractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E66992F81F6687A2F10BD0 /* Pods_firebasePractice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1118638421E5508800F4748E /* firebasePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebasePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1118638721E5508800F4748E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1118638921E5508800F4748E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1118638C21E5508800F4748E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1118638E21E5508A00F4748E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1118639121E5508A00F4748E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1118639321E5508A00F4748E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1118639921E5514B00F4748E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1118639B21E552EC00F4748E /* ChatRoomsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomsTVC.swift; sourceTree = "<group>"; };
+		1118639E21E5530900F4748E /* MessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
+		111863A021E553F000F4748E /* MessageThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageThread.swift; sourceTree = "<group>"; };
+		111863A321E555F700F4748E /* MessageThreadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageThreadController.swift; sourceTree = "<group>"; };
+		111863A621E5564300F4748E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		165F6DB77E752B5CF31A2686 /* Pods-firebasePractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebasePractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firebasePractice/Pods-firebasePractice.debug.xcconfig"; sourceTree = "<group>"; };
 		60E66992F81F6687A2F10BD0 /* Pods_firebasePractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firebasePractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9845E93CDB1370E63BF42278 /* Pods-firebasePractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebasePractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-firebasePractice/Pods-firebasePractice.release.xcconfig"; sourceTree = "<group>"; };
@@ -64,14 +72,42 @@
 			isa = PBXGroup;
 			children = (
 				1118638721E5508800F4748E /* AppDelegate.swift */,
-				1118638921E5508800F4748E /* ViewController.swift */,
 				1118638B21E5508800F4748E /* Main.storyboard */,
+				111863A221E553F400F4748E /* Model */,
+				111863A521E5560100F4748E /* ModelController */,
+				1118639D21E552F000F4748E /* View Controllers */,
 				1118638E21E5508A00F4748E /* Assets.xcassets */,
 				1118639021E5508A00F4748E /* LaunchScreen.storyboard */,
 				1118639321E5508A00F4748E /* Info.plist */,
 				1118639921E5514B00F4748E /* GoogleService-Info.plist */,
 			);
 			path = firebasePractice;
+			sourceTree = "<group>";
+		};
+		1118639D21E552F000F4748E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1118639B21E552EC00F4748E /* ChatRoomsTVC.swift */,
+				1118639E21E5530900F4748E /* MessageVC.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		111863A221E553F400F4748E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				111863A021E553F000F4748E /* MessageThread.swift */,
+				111863A621E5564300F4748E /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		111863A521E5560100F4748E /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				111863A321E555F700F4748E /* MessageThreadController.swift */,
+			);
+			path = ModelController;
 			sourceTree = "<group>";
 		};
 		351F0A6F1852C0BE07884696 /* Pods */ = {
@@ -218,8 +254,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1118638A21E5508800F4748E /* ViewController.swift in Sources */,
+				1118639F21E5530900F4748E /* MessageVC.swift in Sources */,
+				1118639C21E552EC00F4748E /* ChatRoomsTVC.swift in Sources */,
+				111863A421E555F700F4748E /* MessageThreadController.swift in Sources */,
+				111863A721E5564300F4748E /* Message.swift in Sources */,
 				1118638821E5508800F4748E /* AppDelegate.swift in Sources */,
+				111863A121E553F000F4748E /* MessageThread.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
