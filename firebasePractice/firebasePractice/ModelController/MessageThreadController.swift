@@ -24,6 +24,8 @@ class MessageThreadController {
 
         newChatRef.updateChildValues(values)
     }
+    
+    
 
     func getChatRoomsFromFirebase(completion: @escaping ([MessageThread]?) -> Void) {
 
@@ -45,7 +47,10 @@ class MessageThreadController {
             }
         }
     }
+    
+    
 
+    
     func createMessageInFirebase(forThread thread: MessageThread, message: Message) {
 
         let messageRef = ref.child("message").child(thread.identifier!).child(message.messageId!)

@@ -10,6 +10,7 @@ import UIKit
 import MessageKit
 
 struct Message {
+
     var sender: Sender?
     var messageId: String?
     var sentDate: Date?

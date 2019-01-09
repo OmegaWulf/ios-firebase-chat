@@ -21,13 +21,8 @@ class MessageThread {
     }
     
     init(dictionary: [String: AnyObject]) {
-        
         self.title = dictionary["title"] as? String
         self.identifier = dictionary["identifier"] as? String
-        
-
-        
-        
     }
     
     

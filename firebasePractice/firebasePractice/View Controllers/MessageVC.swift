@@ -7,24 +7,43 @@
 //
 
 import UIKit
+import MessageKit
 
-class MessageVC: UIViewController {
+class MessageVC: MessagesViewController, MessagesDataSource, MessagesLayoutDelegate, MessagesDisplayDelegate {
+    
+    
+    var user: User!
+    var messages: [Message]?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        messagesCollectionView.messagesDataSource = self
+        messagesCollectionView.messagesLayoutDelegate = self
+        messagesCollectionView.messagesDisplayDelegate = self
+    
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    
+    func currentSender() -> Sender {
+        return Sender(id: user.id!, displayName: user.name!)
     }
-    */
+    
+    func numberOfSections(in messagesCollectionView: MessagesCollectionView) -> Int {
+        guard messages != nil else { return 0 }
+        
+        return messages?.count ?? 0
+    }
+    
+    func messageForItem(at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> MessageType {
+        
+        return    messages?[indexPath.section]
+    }
+    
+    
+    
+
 
 }
