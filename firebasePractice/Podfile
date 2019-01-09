@@ -6,7 +6,9 @@ target 'firebasePractice' do
   use_frameworks!
 
   # Pods for firebasePractice
-pod 'Firebase/Core'
+
 pod 'MessageKit'
+pod 'Firebase/Core'
+pod 'Firebase/Database'
 
 end
